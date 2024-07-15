@@ -2,7 +2,7 @@
 include 'db.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $id = $_POST["id"];
+    $id = htmlspecialchars($_POST["id"], ENT_QUOTES, 'UTF-8');
     $name = htmlspecialchars($_POST["name"], ENT_QUOTES, 'UTF-8');
     $email = htmlspecialchars($_POST["email"], ENT_QUOTES, 'UTF-8');
     
