@@ -1,6 +1,6 @@
 <?php
 $servername = "localhost";
-$username = "azureuser";
+$username = "";
 $password = "";
 $dbname = "b2b";
 
